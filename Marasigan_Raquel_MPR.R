@@ -4,7 +4,7 @@ Answer {Easy way}
 d <- c(1, 100, NA, 10)
 max(d, na.rm=TRUE)
 
-####???2. 	Define an R function that computes the factorial of given an integer argument.The output should be a vector of length 1.
+#### 2. 	Define an R function that computes the factorial of given an integer argument.The output should be a vector of length 1.
 ##The output should be a vector of lenght 1  recursive calculation which make the code shorter and looks clean.(easy way)
 #sample 1 (easy way)
 recursive.factorial(0)
@@ -20,8 +20,6 @@ factorial = function(x) {
     return (x * factorial(x - 1)) 
   } 
 }
-
-
 
 #### 3. Sorts a given vector in decreasing order. This should accept numeric vector and character vectors
 
@@ -43,19 +41,17 @@ ins_sort <- function(arr){
 } 
 # ins_sort(arr)
 
-####4. Return the nth highest number
+#### 4. Return the nth highest number
 ##Here is the easy way to find the highest vector using sort
 
 c <- c(4,2,44,2,1,45,34,2,4,22,244)
 sort(unique(c), decreasing = TRUE)[1:5]
 
-
-
-### 6 Look for the Prime Number
+### 5. Look for the Prime Number
 ####Verify if the interger is prime or not use Boolean (TRUE AND FALSE)
 isPrime <- function(num){ return (sum(num/1:num == num %/% 1:num) == 2 )}
 
-### 7. Computes the compound interest of an investment.
+### 6. Computes the compound interest of an investment.
 ###Given the rate, time and initial amount or principal
 
 interest = function(principal, interest_rate = 0.01, n_cpd_periods = 1){
@@ -63,7 +59,7 @@ interest = function(principal, interest_rate = 0.01, n_cpd_periods = 1){
 }
 interest(1000)
 
-#####8. Define an R function that accepts a POSIXct as argument and outputs the day of the week as characters.
+##### 7. Define an R function that accepts a POSIXct as argument and outputs the day of the week as characters.
 # Let the date as.POSIXct 
 
 date_nw = as.POSIXct(as.Date("01/01/1970", format = "%m/%d/%Y"))
